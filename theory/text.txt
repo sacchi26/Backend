@@ -1,0 +1,49 @@
+1.What is a NoSQL Database, and explain the types of NoSQL database?
+ans: NoSQL databases are defined as non-tabular databases that handle data storage differently as compared to relational tables.
+ NoSQL database types are classified according to the data model, and the popular types include document, graph, column, and key-value.
+
+ 2.What is the difference between SQL and NoSQL databases?
+ ans:SQL databases are relational, and NoSQL databases are non-relational. SQL databases use structured query language (SQL) and have a predefined schema. NoSQL databases have dynamic schemas for unstructured data.
+  SQL databases are vertically scalable, while NoSQL databases are horizontally scalable.
+
+  3.How to choose between MongoDB and MySQL based on your requirements?
+  ans:MySQL is relatively slow because it organizes information logically in tables. The database must write and read data from many tables to update or retrieve information, increasing server load and degrading speed.
+ MongoDB is clearly the right choice if you are deciding based on higher speed and performance.
+
+ 4.What are collections and documents in a MongoDB database?
+ ans: MongoDB stores data records as documents (specifically BSON documents) which are gathered together in collections. A database stores one or more collections of documents. 
+ You can manage databases and collections on the Atlas cluster from the Atlas UI, mongosh , or MongoDB Compass.
+
+ 5.What is BSON? What is the difference between BSON and JSON?
+ ans: Binary vs. text: BSON is a binary-encoded format, whereas JSON is a text-based format. 
+ This means that BSON is compact for transmitting over a network, while JSON is human-readable and easier to work with in various contexts.
+
+ 6.What are MongoDB Compass and MongoDB Shell used for?
+ ans : You can select connect with compass and get your connection string then you can use it in Flutter for connect your mongodb. Correct - but Mongo Compass is typically more used to import/export data and manage the collections in the database.
+  While Mongo DB shell is more for console type debugging.
+
+  7.How to create collections in MongoDB?
+  ans :Create Collection Method
+Several ways can be employed to create and remove collections in MongoDB. Of which one way is by using db. createCollection(name, options). 
+MongoDB creates a collection for an inserted command automatically if no similar collection already exists in the MongoDB database.
+
+8.What is the difference between insertMany and insertOne?
+ans: MongoDB provides the following methods to insert documents into a collection: insertOne() - Inserts a single document into a collection.
+ insert() - Inserts one or more documents into a collection. insertMany() - Insert multiple documents into a collection.
+
+ 9.What is the difference between deleteOne and deleteMany?
+ ans: DeleteOne() , which deletes the first document that matches the filter.
+  DeleteMany() , which deletes all documents that match the filter.
+
+  10.How to read data in MongoDB? What is the difference between find and findOne?
+  ans: Difference between find() and findOne() methods in MongoDB? The findOne() returns first document if query matches otherwise returns null. 
+  The find() method does not return null, it returns a cursor.
+
+  11.What is $set in MongoDB?
+  ans : The $set operator replaces the value of a field with the specified value.
+
+  12.How to filter data using MongoDB?
+  ans: MongoDB filter operator is used to filter the elements from the array field. We can use multiple condition like $gt, $lt, $gte and $lte to retrieve data from array elements. 
+  I suppose we have used filter operator on empty array field it will return the empty result in output.
+
+
